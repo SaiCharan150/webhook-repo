@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #24292e;
+    --secondary-color: #0366d6;
+    --success-color: #28a745;
+    --warning-color: #ffd33d;
+    --danger-color: #d73a49;
+    --light-color: #f6f8fa;
+    --dark-color: #1b1f23;
+    --text-color: #24292e;
+    --text-light: #586069;
+    --border-color: #e1e4e8;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.event {
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid var(--border-color);
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.event:hover {
+    background-color: var(--light-color);
+}
+
+.push-event {
+    border-left-color: var(--success-color);
+}
+
+.pr-event {
+    border-left-color: var(--warning-color);
+}
+
+.merge-event {
+    border-left-color: var(--secondary-color);
+}
+
+.author {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.action {
+    color: var(--text-color);
+}
+
+.branch {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    background-color: var(--light-color);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: var(--dark-color);
+}
+
+.timestamp {
+    float: right;
+    color: var(--text-light);
+    font-size: 0.9em;
+}
+
+.loading, .no-events, .error {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-light);
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+    font-size: 12px;
+    color: var(--text-light);
+    text-align: center;
+}
